@@ -1,7 +1,7 @@
 package com.hillel.suraieva.homework16;
 
 public class Drinks {
-    private static double price;
+    private double price;
     private static final Drinks COFFEE = new Drinks(1.45);
     private static final Drinks TEA = new Drinks(0.6);
     private static final Drinks LIMONADE = new Drinks(2.1);
@@ -11,10 +11,6 @@ public class Drinks {
 
     private Drinks(double price) {
         this.price = price;
-    }
-
-    public static double getPrice() {
-        return price;
     }
 
     @Override
